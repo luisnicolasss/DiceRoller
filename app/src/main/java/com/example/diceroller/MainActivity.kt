@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton = findViewById<Button>(R.id.roll_button)
         val countButton = findViewById<Button>(R.id.countup_button)
+        val cleanButton = findViewById<Button>(R.id.clean_button)
 
         rollButton.setOnClickListener {
             rollDice()
@@ -21,6 +22,17 @@ class MainActivity : AppCompatActivity() {
         countButton.setOnClickListener {
             countUp()
         }
+
+        cleanButton.setOnClickListener {
+            clean()
+        }
+    }
+
+    private fun clean() {
+        val resultText: TextView = findViewById(R.id.result_text)
+        val resultZero = 0
+        resultText.text = resultZero.toString()
+
     }
 
     private fun countUp() {

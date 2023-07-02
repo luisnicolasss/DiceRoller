@@ -2,4 +2,5 @@
     <string name="app_name">DiceRoller</string>
     <string name="roll_label">Roll</string>
     <string name="label_count">Contar</string>
+    <string name="clean_label">Restablecer</string>
 </resources>
