@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         diceImage2 = findViewById(R.id.dice_image2)
 
         val rollButton = findViewById<Button>(R.id.roll_button)
+        val cleanButton = findViewById<Button>(R.id.clean_button)
 
 
         rollButton.setOnClickListener {
@@ -29,18 +30,19 @@ class MainActivity : AppCompatActivity() {
              countUp()
          }
 
-         cleanButton.setOnClickListener {
-             clean()
-         }*/
+         */
+
+        cleanButton.setOnClickListener {
+            cleanDice()
+        }
     }
 
-    /* private fun clean() {
-         val resultText: TextView = findViewById(R.id.result_text)
-         val resultZero = 0
-         resultText.text = resultZero.toString()
+    private fun cleanDice() {
+        diceImage.setImageResource(R.drawable.empty_dice)
+        diceImage2.setImageResource(R.drawable.empty_dice)
+    }
 
-     }
-
+    /*
      private fun countUp() {
          val resultText: TextView = findViewById(R.id.result_text)
 
